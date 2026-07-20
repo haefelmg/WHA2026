@@ -187,7 +187,12 @@ h2 {
 .site-footer {
   color: var(--navy);
   border-top: 4px solid var(--navy);
-  background: var(--cream);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url('/images/mount-baker-panorama.jpg');
+  background-position: center, center 68%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .footer-inner {
   min-height: 9rem;
