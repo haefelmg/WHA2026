@@ -189,8 +189,8 @@ h2 {
   border-top: 4px solid var(--navy);
   background-image:
     linear-gradient(rgba(0, 0, 80, 0.68), rgba(0, 0, 80, 0.68)),
-    url('/images/mount-baker-panorama.jpg');
-  background-position: center, center 68%;
+    url('/images/mount-baker-footer-panorama.jpg');
+  background-position: center, center 52%;
   background-size: cover;
   background-repeat: no-repeat;
 }
