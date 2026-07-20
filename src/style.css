@@ -40,17 +40,24 @@ p { line-height: 1.6; }
   background: var(--white);
 }
 .header-inner {
-  min-height: 6.5rem;
+  min-height: 8.75rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 1.25rem;
 }
 .brand { display: flex; flex-direction: column; color: var(--navy); }
+.site-header .brand {
+  align-items: center;
+  text-align: center;
+}
 .brand__name {
-  font-family: "Monotype Corsiva", "URW Chancery L", "Apple Chancery", "Brush Script MT", Georgia, serif;
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
   font-size: clamp(1.75rem, 3.3vw, 2.5rem);
   font-style: italic;
+  font-weight: 700;
   line-height: 1;
 }
 .brand__descriptor {
@@ -72,6 +79,19 @@ p { line-height: 1.6; }
   font-style: normal;
   font-weight: 600;
   text-align: right;
+}
+.header-contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding-block: 0.55rem;
+  border-top: 2px solid var(--navy);
+  border-bottom: 2px solid var(--navy);
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .hero {
@@ -162,7 +182,11 @@ h2 {
 .lower-grid > article:nth-child(2) { padding-left: 2rem; border-left: 1px solid var(--rule); }
 .lower-grid h3:not(:first-of-type) { margin-top: 1rem; }
 .license-note { margin-top: 1rem; font-size: 0.82rem; font-style: italic; }
-.site-footer { color: var(--white); background: var(--navy-dark); }
+.site-footer {
+  color: var(--navy);
+  border-top: 4px solid var(--navy);
+  background: var(--cream);
+}
 .footer-inner {
   min-height: 9rem;
   display: grid;
@@ -170,14 +194,14 @@ h2 {
   align-items: center;
   gap: 1.5rem 3rem;
 }
-.brand--footer { color: var(--white); }
-.footer-contact { color: rgba(255,255,255,.82); }
+.brand--footer { color: var(--navy); }
+.footer-contact { color: var(--navy); }
 .copyright {
   grid-column: 1 / -1;
   margin: -1rem 0 0;
   padding-top: 0.75rem;
-  border-top: 1px solid rgba(255,255,255,.18);
-  color: rgba(255,255,255,.55);
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
   font-size: 0.7rem;
 }
 
@@ -185,8 +209,13 @@ h2 {
 
 @media (max-width: 720px) {
   .container { width: min(calc(100% - 2rem), var(--container)); }
-  .header-inner { min-height: 7.5rem; align-items: flex-start; flex-direction: column; justify-content: center; gap: 0.8rem; }
-  .header-contact { flex-direction: row; flex-wrap: wrap; gap: 0.35rem 1rem; text-align: left; }
+  .header-inner { min-height: 0; gap: 0.9rem; padding-block: 1.1rem; }
+  .header-contact {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding-block: 0.65rem;
+    font-size: 0.96rem;
+  }
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 80, 0.5)),
