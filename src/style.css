@@ -155,14 +155,12 @@ h2 {
 }
 .intro p { margin-bottom: 0.75rem; color: var(--muted); }
 
-.services { padding-block: 2.75rem; border-bottom: 1px solid var(--rule); }
-.section-title { max-width: 760px; margin-bottom: 1.75rem; }
+.services { padding-block: 2.1rem; border-bottom: 1px solid var(--rule); }
+.section-title { max-width: 760px; margin-bottom: 1.2rem; }
 .service-text { columns: 2; column-gap: clamp(2.5rem, 6vw, 5rem); }
 .service-text article {
   break-inside: avoid;
-  margin-bottom: 1.5rem;
-  padding-top: 0.9rem;
-  border-top: 2px solid var(--navy);
+  margin-bottom: 1.05rem;
 }
 .service-text h3,
 .lower-grid h3 {
@@ -172,6 +170,7 @@ h2 {
   font-size: 1.25rem;
   font-weight: 400;
 }
+.service-text h3 { font-size: 1.4rem; }
 .service-text p,
 .lower-grid p { margin-bottom: 0; color: var(--muted); }
 
