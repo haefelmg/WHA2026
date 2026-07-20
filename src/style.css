@@ -185,10 +185,10 @@ h2 {
 .lower-grid h3:not(:first-of-type) { margin-top: 1rem; }
 .license-note { margin-top: 1rem; font-size: 0.82rem; font-style: italic; }
 .site-footer {
-  color: var(--navy);
+  color: var(--white);
   border-top: 4px solid var(--navy);
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    linear-gradient(rgba(0, 0, 80, 0.68), rgba(0, 0, 80, 0.68)),
     url('/images/mount-baker-panorama.jpg');
   background-position: center, center 68%;
   background-size: cover;
@@ -201,14 +201,14 @@ h2 {
   align-items: center;
   gap: 1.5rem 3rem;
 }
-.brand--footer { color: var(--navy); }
-.footer-contact { color: var(--navy); }
+.brand--footer { color: var(--white); }
+.footer-contact { color: rgba(255, 255, 255, 0.9); }
 .copyright {
   grid-column: 1 / -1;
   margin: -1rem 0 0;
   padding-top: 0.75rem;
-  border-top: 1px solid var(--rule);
-  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 0.7rem;
 }
 
