@@ -53,6 +53,9 @@ p { line-height: 1.6; }
   align-items: center;
   text-align: center;
 }
+.site-header .brand__name {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
 .brand__name {
   font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
   font-size: clamp(1.75rem, 3.3vw, 2.5rem);
@@ -102,7 +105,7 @@ p { line-height: 1.6; }
   background-image:
     linear-gradient(rgba(0, 0, 80, 0.48), rgba(0, 0, 80, 0.48)),
     url('/images/mount-baker-panorama.jpg');
-  background-position: center, center 40%;
+  background-position: center, center 57%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -121,7 +124,7 @@ p { line-height: 1.6; }
   max-width: 800px;
   margin-bottom: 1rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  font-size: clamp(1.75rem, 3.3vw, 2.5rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -220,7 +223,7 @@ h2 {
     background-image:
       linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 80, 0.5)),
       url('/images/mount-baker-panorama.jpg');
-    background-position: center, center 42%;
+    background-position: center, center 56%;
   }
   .hero__inner { padding-block: 2.25rem; }
   .intro, .lower-grid { grid-template-columns: 1fr; }
