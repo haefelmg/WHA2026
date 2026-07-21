@@ -229,6 +229,18 @@ h2 {
   font-size: 0.7rem;
 }
 .footer-meta p { margin: 0; }
+.footer-meta__left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+.footer-meta a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+.footer-meta a:hover,
+.footer-meta a:focus-visible { color: var(--white); }
 
 :focus-visible { outline: 3px solid #78bdf2; outline-offset: 3px; }
 
@@ -253,7 +265,7 @@ h2 {
   .lower-grid > article:nth-child(2) { padding: 1.75rem 0 0; border-top: 1px solid var(--rule); border-left: 0; }
   .footer-inner { grid-template-columns: 1fr; padding-block: 2rem; }
   .footer-contact { justify-content: flex-start; text-align: left; }
-  .footer-meta { grid-column: auto; margin-top: 0; }
+  .footer-meta { grid-column: auto; align-items: flex-start; flex-direction: column; margin-top: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

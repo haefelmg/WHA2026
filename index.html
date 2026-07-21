@@ -1,6 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      if (window.location.hostname === 'www.haefele-assoc.com') {
+        window.dataLayer = window.dataLayer || []
+        window.gtag = function () {
+          window.dataLayer.push(arguments)
+        }
+
+        const googleTag = document.createElement('script')
+        googleTag.async = true
+        googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-2S2BZEPTQ5'
+        document.head.appendChild(googleTag)
+
+        window.gtag('js', new Date())
+        window.gtag('config', 'G-2S2BZEPTQ5')
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000080" />
@@ -168,7 +184,10 @@
           <span>whaefele@haefele-assoc.com</span>
         </div>
         <div class="footer-meta">
-          <p class="copyright">&copy; <span data-year></span> Wayne Haefele &amp; Associates, Inc.</p>
+          <div class="footer-meta__left">
+            <p class="copyright">&copy; <span data-year></span> Wayne Haefele &amp; Associates, Inc.</p>
+            <a href="privacy.html">Privacy Notice</a>
+          </div>
           <p>P.O. Box 384 · Lopez Island, WA 98261</p>
         </div>
       </div>
