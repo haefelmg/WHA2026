@@ -235,6 +235,19 @@ h2 {
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
 }
+.footer-address {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-linkedin {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+.footer-linkedin svg { display: block; }
 .footer-meta a {
   color: inherit;
   text-underline-offset: 0.2em;
